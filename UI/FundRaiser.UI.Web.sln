@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FundRaiser.UI.Web", "FundRaiser.UI.Web\FundRaiser.UI.Web.csproj", "{3122E612-EECA-4D95-B2D2-76CA29C48A40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FundRaiser.UI.Statics", "FundRaiser.UI.Statics\FundRaiser.UI.Statics.csproj", "{11D6C0B8-6278-447D-A67C-52F406D73DC7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3122E612-EECA-4D95-B2D2-76CA29C48A40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3122E612-EECA-4D95-B2D2-76CA29C48A40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3122E612-EECA-4D95-B2D2-76CA29C48A40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3122E612-EECA-4D95-B2D2-76CA29C48A40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11D6C0B8-6278-447D-A67C-52F406D73DC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11D6C0B8-6278-447D-A67C-52F406D73DC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11D6C0B8-6278-447D-A67C-52F406D73DC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11D6C0B8-6278-447D-A67C-52F406D73DC7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
