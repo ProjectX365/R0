@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="System.Accountant">
+  <useCaseModelRootMoniker Id="bdee43b1-4fd5-44fa-8b91-467b8031aba2" />
+  <nestedChildShapes>
+    <actorShape Id="ba4164b5-0c41-42c1-95cc-7aa16943e2cb" absoluteBounds="1.25, 2.125, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="69168054-6e08-44b8-be91-499d8fde9891" LastKnownName="System Accountant" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseShape Id="f9e4f72d-e8ed-485b-adfb-69b7ca837147" absoluteBounds="3.125, 1, 1.875, 0.625" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="2396c09d-bfb2-4901-8718-72da4345c986" LastKnownName="Allocate Fund" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(1.75 : 2.27134146341463); (3.47510289516438 : 1.55605489712696)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="b2ffc840-79a9-4e62-8982-74d2cdf39d45" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="ba4164b5-0c41-42c1-95cc-7aa16943e2cb" />
+        <useCaseShapeMoniker Id="f9e4f72d-e8ed-485b-adfb-69b7ca837147" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="0b992bc7-bd63-462c-a3ce-ba8e394655d1" absoluteBounds="3.125, 2, 1.875, 0.625" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="ddab1d86-67b5-45dc-9a15-ce63a09a3b41" LastKnownName="Collect Fund" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(1.75 : 2.36890243902439); (3.1274996341329 : 2.33530488697237)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="400eaca7-7ecb-45ec-b10b-c66682db7b9f" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="ba4164b5-0c41-42c1-95cc-7aa16943e2cb" />
+        <useCaseShapeMoniker Id="0b992bc7-bd63-462c-a3ce-ba8e394655d1" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="2e2c6b03-7843-4c02-8a41-6d5586d3938f" absoluteBounds="3.125, 3.125, 1.875, 0.625" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="aa1a2e3f-ebc6-45f2-830e-d5eed3c300cb" LastKnownName="Dellocate fund [Unused fund back to funder]" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(1.75 : 2.47865853658537); (3.47510289516438 : 3.19394510287304)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="8e8a097e-dacc-41a5-a192-f7409e5cdced" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="ba4164b5-0c41-42c1-95cc-7aa16943e2cb" />
+        <useCaseShapeMoniker Id="2e2c6b03-7843-4c02-8a41-6d5586d3938f" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="4022f2e8-ea17-44b1-8260-020dea7426f4" absoluteBounds="3.125, 4.25, 1.875, 0.625" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="3b4cd2f7-6431-4929-9c6e-b05e344330c5" LastKnownName="Fund report" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(1.75 : 2.58841463414634); (3.72150288268174 : 4.27140489985027)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="cb302ec9-7426-4783-a234-322c322174b9" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="ba4164b5-0c41-42c1-95cc-7aa16943e2cb" />
+        <useCaseShapeMoniker Id="4022f2e8-ea17-44b1-8260-020dea7426f4" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <commentShape Id="fee1b673-6994-4d1a-8f0c-b1ceb6835f36" absoluteBounds="6, 2.25, 2.125, 1" customColor="251, 247, 200">
+      <commentMoniker Id="e8698b10-9a59-4229-af8d-bc0bb015b201" />
+      <relativeChildShapes />
+    </commentShape>
+    <useCaseShape Id="2c1d4c59-a8c6-4461-acf6-bd864004d4af" absoluteBounds="3.125, 5.5, 1.875, 0.625" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="4ca23715-b489-4d59-a67e-2f1498e0ea37" LastKnownName="Send expiration notification" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(1.68636363636364 : 2.625); (3.83642052606307 : 5.50922265691388)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="4f2d05c1-a23d-44ef-8cf2-9e3c3ee777b6" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="ba4164b5-0c41-42c1-95cc-7aa16943e2cb" />
+        <useCaseShapeMoniker Id="2c1d4c59-a8c6-4461-acf6-bd864004d4af" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="94609efd-8f5e-4e95-b53d-275870765250" absoluteBounds="3.125, 6.75, 1.875, 0.625" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="3c382e4d-923d-4f39-90ca-b2fa043de65f" LastKnownName="Send funded request notification" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(1.63666666666667 : 2.625); (3.89443418789133 : 6.7550625388256)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="405f08c7-8a2a-4b0d-966d-2d1c9eae65dc" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="ba4164b5-0c41-42c1-95cc-7aa16943e2cb" />
+        <useCaseShapeMoniker Id="94609efd-8f5e-4e95-b53d-275870765250" />
+      </nodes>
+    </useCaseAssociationConnector>
+  </nestedChildShapes>
+</useCaseDiagram>

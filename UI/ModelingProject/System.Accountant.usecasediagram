@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="bdee43b1-4fd5-44fa-8b91-467b8031aba2" name="System.Accountant" linkedPackageId="b88f57e2-683c-4621-8bf2-0069cb482ba3" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="e8698b10-9a59-4229-af8d-bc0bb015b201">
+      <elementDefinition Id="382de020-16cf-4b6a-823a-e3e7002ee037" />
+      <body>All actions should keep track in a transaction log</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="23d12b89-2ece-41aa-b411-b2a32fb52582">
+      <profileInstance Id="8a07c2b4-cbc4-4968-9865-4987f68ee6b5" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="0b68f027-815d-4cf7-bf96-a64dba3aced2">
+      <profileInstance Id="de007d7a-3cf6-4b52-b2cf-fb69716b0f5a" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="69168054-6e08-44b8-be91-499d8fde9891" name="System Accountant" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e7dc6caf-4604-4825-b73a-59e1816c5cf8" />
+        <targetEnds>
+          <association Id="b2ffc840-79a9-4e62-8982-74d2cdf39d45" isDerived="false" sourceEndRoleName="System Accountant" targetEndRoleName="Allocate Fund" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="2396c09d-bfb2-4901-8718-72da4345c986" LastKnownName="Allocate Fund" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="80b74bd8-2894-4164-88ce-9aa304ba19ac" name="System Accountant" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="be410074-be68-4357-b4db-d55bfe88509e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4a7fe034-f193-49bc-944e-5b54eeb6d703" name="Allocate Fund" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="bf80ec51-bd08-4266-b82b-51907cfd92f7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5c3bde12-57f2-4607-a226-132e36499e60" />
+          </association>
+          <association Id="400eaca7-7ecb-45ec-b10b-c66682db7b9f" isDerived="false" sourceEndRoleName="System Accountant" targetEndRoleName="Collect Fund" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="ddab1d86-67b5-45dc-9a15-ce63a09a3b41" LastKnownName="Collect Fund" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d069fb33-7dba-4599-ac20-f3d689bc92c8" name="System Accountant" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="82732b46-866b-45d7-8389-46323f641980" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4cad2579-2587-4fc8-a2a0-2b67f2ddd2bd" name="Collect Fund" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="efe03b3a-5b87-4e71-93ce-e9e48693cdf2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f632b0ae-67a4-4f7f-ac4e-f350feb87b4f" />
+          </association>
+          <association Id="8e8a097e-dacc-41a5-a192-f7409e5cdced" isDerived="false" sourceEndRoleName="System Accountant" targetEndRoleName="Dellocate fund [Unused fund back to funder]" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="aa1a2e3f-ebc6-45f2-830e-d5eed3c300cb" LastKnownName="Dellocate fund [Unused fund back to funder]" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9179c395-134f-43b3-b931-e14bc3662a43" name="System Accountant" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="46f1d82b-ee23-4e7b-997d-b5d872d8e3e9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="727bb290-9ba8-4556-96c3-f21ff9f6ffd6" name="Dellocate fund [Unused fund back to funder]" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="542b4379-81fd-4fe1-b040-c0b42d69bdae" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="79f90b37-587e-4493-8c82-e1d1e8da2fad" />
+          </association>
+          <association Id="cb302ec9-7426-4783-a234-322c322174b9" isDerived="false" sourceEndRoleName="System Accountant" targetEndRoleName="Fund report" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="3b4cd2f7-6431-4929-9c6e-b05e344330c5" LastKnownName="Fund report" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="91550b49-3241-477c-99d8-29108deeb7c2" name="System Accountant" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="000c3650-14e4-44e8-b822-454db906bd6f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="63842dd2-41ad-4d09-ba66-6737804142e7" name="Fund report" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="17c31e7b-ce57-4129-a655-3c6aa558dcb9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f8893ada-634e-43ce-adfc-62f3e20badc1" />
+          </association>
+          <association Id="4f2d05c1-a23d-44ef-8cf2-9e3c3ee777b6" isDerived="false" sourceEndRoleName="System Accountant" targetEndRoleName="Create Account2" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="4ca23715-b489-4d59-a67e-2f1498e0ea37" LastKnownName="Send expiration notification" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="73ef6518-4a13-4234-a574-84136d4c679e" name="System Accountant" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4cf44137-e47a-4ad7-a658-50f054b1c9da" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bd1e4c80-8ca0-4fca-8f8d-d3e4dc9ddd11" name="Create Account2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="846b6523-2219-41a9-b5ac-ed043fdc1da0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e1ae9f31-bed9-44a0-90f8-5e4ee596ef95" />
+          </association>
+          <association Id="405f08c7-8a2a-4b0d-966d-2d1c9eae65dc" isDerived="false" sourceEndRoleName="System Accountant" targetEndRoleName="Send funded request notification" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="3c382e4d-923d-4f39-90ca-b2fa043de65f" LastKnownName="Send funded request notification" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="10fbbeeb-cb05-4410-95f0-4224ed5866e3" name="System Accountant" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3e93277e-436f-4cd7-aace-f61c5d88f4ac" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cd3ba4a0-9977-4f3a-8f5c-eedc43095f76" name="Send funded request notification" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7cd6e957-935c-4298-9ed7-e547e00cdb63" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="6e7d7a25-1d43-4cc9-8ec6-c317f63f6357" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="2396c09d-bfb2-4901-8718-72da4345c986" name="Allocate Fund" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1f395e00-91c1-45d7-a232-99746c8850dd" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ddab1d86-67b5-45dc-9a15-ce63a09a3b41" name="Collect Fund" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="41f6e226-5579-4eed-8303-fdace9b1791f" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="aa1a2e3f-ebc6-45f2-830e-d5eed3c300cb" name="Dellocate fund [Unused fund back to funder]" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c86f1d72-e04c-442c-a62e-826f7c0da2d7" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="3b4cd2f7-6431-4929-9c6e-b05e344330c5" name="Fund report" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c3d62c59-b8a7-4f14-95c0-e37fee25d450" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4ca23715-b489-4d59-a67e-2f1498e0ea37" name="Send expiration notification" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6b72b258-090d-4d94-8188-c796b06668e5" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="3c382e4d-923d-4f39-90ca-b2fa043de65f" name="Send funded request notification" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4ac64760-026d-4a19-84ee-1cf3d92fe85a" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="b88f57e2-683c-4621-8bf2-0069cb482ba3" name="ModelingProject">
+    <elementDefinition Id="23e96121-9922-4e99-9876-9e0bf94d6e20" />
+  </package>
+</useCaseModelRoot>

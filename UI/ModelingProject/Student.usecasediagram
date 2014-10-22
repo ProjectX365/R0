@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="2ac1c49b-2fc8-404f-a7a4-82f3a74cd51c" name="Student" linkedPackageId="98a43b87-6dfc-4be4-b9f9-fbfde56278f6" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="7c4be569-b24e-4bf2-b3cd-078c8bba350b">
+      <profileInstance Id="fe115f9c-9a35-4c0b-8972-80eca8dceec3" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="413fc1ed-3eeb-4082-9cad-ecff26c0e062">
+      <profileInstance Id="65431673-0eb2-498f-b306-d1c581081c96" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="aa14d298-a264-4fe7-9a97-551ae3b7d161" name="Student" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c9de4c8f-0e85-4b16-aa2d-0f42fda157dc" />
+        <targetEnds>
+          <association Id="bb533c33-58b2-4a39-8860-bfaa6e2344c9" isDerived="false" sourceEndRoleName="Student" targetEndRoleName="Create Request" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="4bda1e3e-ba9e-4d93-aafd-88c8be4be01a" LastKnownName="Create Profile" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="de177460-5894-4077-8ebc-aac470e6b42a" name="Student" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="00afa079-e18f-498e-974e-5983b8bda489" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0845107a-18d1-467a-ae59-477b3d9e46e0" name="Create Request" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="bccf4c8c-59c8-4742-a229-6e12fbba6d45" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="81939b02-6144-4957-808b-a120d62724a7" />
+          </association>
+          <association Id="be4a270d-b215-41fa-93ea-a9231c9df1fb" isDerived="false" sourceEndRoleName="Student" targetEndRoleName="UseCase1" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="66d4d239-dd2c-407a-a53e-1eeddd05dc23" LastKnownName="Reuest fund" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="771f98c3-3b7a-491f-b46f-973565e399b8" name="Student" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8463f2d3-b23a-4889-b13d-de533c2eb988" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3cdb50d6-14ec-4ce8-a46e-d51d71f9cec4" name="UseCase1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8a05c405-085d-4745-9329-c66ccd02bb20" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="71230cc8-1b55-41c5-ab8f-9c94f34d470c" />
+          </association>
+          <association Id="3bcd04c5-05a7-485d-993b-ef7302b10ad2" isDerived="false" sourceEndRoleName="Student" targetEndRoleName="Do marketing for fund raise" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="33f97b99-7341-4eee-92c0-464bc5663561" LastKnownName="Do marketing for fund raise" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3c99dd1e-6395-4656-848a-4671e7a49944" name="Student" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="370d7cc0-6ff6-41b1-b5fc-358e456fa118" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b086498a-162f-42b4-afb8-cc63c1e8c772" name="Do marketing for fund raise" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="52bed2f9-0af3-457a-98ca-47acba61d474" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a19ea38e-6537-4ab8-b513-07ac8377d021" />
+          </association>
+          <association Id="d4095ea6-8921-4f26-b665-dfc5cc1d5914" isDerived="false" sourceEndRoleName="Student" targetEndRoleName="Update expense summary and status" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="bc42e279-0a2d-42fe-98fc-7aabb52f8b61" LastKnownName="Update expense summary and status" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="53a3d3ed-798a-4242-b5ee-c56018b68eb5" name="Student" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0efaa6a1-6d15-43d3-ba82-d2fe6502b338" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="92528c3b-4a48-4f97-93cf-582ae9a147ef" name="Update expense summary and status" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3fb31208-0ea8-4460-960c-1fec68ba9233" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e8b0a33a-428b-433e-9326-c941532b4587" />
+          </association>
+          <association Id="c0047295-5595-4375-b304-41f58f347c0d" isDerived="false" sourceEndRoleName="Student" targetEndRoleName="Create Account" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="2cd731c6-ac6c-4cf3-aba0-976d8e281f85" LastKnownName="Create Account" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fd55b906-9631-4674-9775-54cd34fb9b56" name="Student" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="7e351e7c-087f-4a98-8056-2b1e011b2a96" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b82ab674-2e3a-4b89-8ae1-c3a5dcc1d805" name="Create Account" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8f6c9ec5-4d6d-44dd-8d39-68e35829cf98" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="54b3ab87-a4ef-4ac6-ac41-57b1d4a4d20f" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4bda1e3e-ba9e-4d93-aafd-88c8be4be01a" name="Create Profile" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c0350c1e-300b-4307-89ed-d483cfe8c0b1" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="66d4d239-dd2c-407a-a53e-1eeddd05dc23" name="Reuest fund" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="187e14ee-a2a6-4b0b-8213-3c206171eaee" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="33f97b99-7341-4eee-92c0-464bc5663561" name="Do marketing for fund raise" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="90f914c0-ae0e-4bcd-9447-044d3e5e2289" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="bc42e279-0a2d-42fe-98fc-7aabb52f8b61" name="Update expense summary and status" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="32d586c7-b904-46b8-9870-e3d03e18d374" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="2cd731c6-ac6c-4cf3-aba0-976d8e281f85" name="Create Account" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="55734120-1fa4-4aac-b1e9-283d0f578e89" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="98a43b87-6dfc-4be4-b9f9-fbfde56278f6" name="ModelingProject">
+    <elementDefinition Id="23e96121-9922-4e99-9876-9e0bf94d6e20" />
+  </package>
+</useCaseModelRoot>

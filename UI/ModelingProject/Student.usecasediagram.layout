@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Student">
+  <useCaseModelRootMoniker Id="2ac1c49b-2fc8-404f-a7a4-82f3a74cd51c" />
+  <nestedChildShapes>
+    <actorShape Id="00b11518-15e2-4959-a4bf-0f36d3bc8e15" absoluteBounds="1.25, 2.375, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="aa14d298-a264-4fe7-9a97-551ae3b7d161" LastKnownName="Student" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseShape Id="fdffcc2a-f771-4833-a36b-0189dc347edc" absoluteBounds="3.375, 2.625, 1.875, 0.625" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="4bda1e3e-ba9e-4d93-aafd-88c8be4be01a" LastKnownName="Create Profile" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(1.75 : 2.65277777777778); (3.42310940807764 : 2.83867882311974)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="bb533c33-58b2-4a39-8860-bfaa6e2344c9" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="00b11518-15e2-4959-a4bf-0f36d3bc8e15" />
+        <useCaseShapeMoniker Id="fdffcc2a-f771-4833-a36b-0189dc347edc" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="ac92e4a6-7924-4602-86a3-27f3d84915ab" absoluteBounds="3.375, 4, 1.875, 0.625" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="66d4d239-dd2c-407a-a53e-1eeddd05dc23" LastKnownName="Reuest fund" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(1.75 : 2.775); (3.85720975202003 : 4.03932585121202)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="be4a270d-b215-41fa-93ea-a9231c9df1fb" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="00b11518-15e2-4959-a4bf-0f36d3bc8e15" />
+        <useCaseShapeMoniker Id="ac92e4a6-7924-4602-86a3-27f3d84915ab" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="7e14bc9f-c617-44e9-8cee-763318bf21bb" absoluteBounds="3.5, 5.5, 1.875, 0.625" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="33f97b99-7341-4eee-92c0-464bc5663561" LastKnownName="Do marketing for fund raise" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(1.73039215686275 : 2.875); (4.16220614099065 : 5.51377687639411)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="3bcd04c5-05a7-485d-993b-ef7302b10ad2" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="00b11518-15e2-4959-a4bf-0f36d3bc8e15" />
+        <useCaseShapeMoniker Id="7e14bc9f-c617-44e9-8cee-763318bf21bb" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="f085184e-a9d3-45ed-8ea1-703fd5b67bae" absoluteBounds="3.5, 6.875, 1.875, 0.625" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="bc42e279-0a2d-42fe-98fc-7aabb52f8b61" LastKnownName="Update expense summary and status" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(1.66095890410959 : 2.875); (4.24078064860296 : 6.88195717761736)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="d4095ea6-8921-4f26-b665-dfc5cc1d5914" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="00b11518-15e2-4959-a4bf-0f36d3bc8e15" />
+        <useCaseShapeMoniker Id="f085184e-a9d3-45ed-8ea1-703fd5b67bae" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="ad7eb7ca-5e07-438f-8f0d-37f68e4fa6a6" absoluteBounds="3.375, 1.375, 1.875, 0.625" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="2cd731c6-ac6c-4cf3-aba0-976d8e281f85" LastKnownName="Create Account" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(1.75 : 2.54166666666667); (3.64958739263761 : 1.9084708691208)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="c0047295-5595-4375-b304-41f58f347c0d" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="00b11518-15e2-4959-a4bf-0f36d3bc8e15" />
+        <useCaseShapeMoniker Id="ad7eb7ca-5e07-438f-8f0d-37f68e4fa6a6" />
+      </nodes>
+    </useCaseAssociationConnector>
+  </nestedChildShapes>
+</useCaseDiagram>

@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="7cc260b5-b89b-42fd-8116-9636994991c4" name="UMLUseCaseDiagram1" linkedPackageId="cd67e845-2570-4692-b494-41c19457533a" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="e7688e1d-5850-456c-a06b-35dc86a37359" name="School" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6758b98b-8333-4265-876d-0a282cba8b81" />
+        <targetEnds>
+          <association Id="e57744a1-c3cb-42ad-b09d-a42a35f0393e" isDerived="false" sourceEndRoleName="School" targetEndRoleName="Create Account" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="ea244184-5f25-45a6-938a-5de468760cb3" LastKnownName="Create Account" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="81f513f5-6e8d-438b-b30a-e0f8f50a1c9b" name="School" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e1e11729-3908-4649-a95c-b7ddb47a634c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d0f84243-32a3-4551-92d9-5c4237ebc4ef" name="Create Account" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7e404206-8a78-4924-bd68-ba09f0a22000" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="aaecd006-11af-49ae-99b2-e77fc93b0f6f" />
+          </association>
+          <association Id="fdecf7fd-ebce-4515-9d9a-1324f7ff9b2f" isDerived="false" sourceEndRoleName="School" targetEndRoleName="Review student request" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="d84905d0-8499-439d-b027-b52fddb7e85f" LastKnownName="Review student request" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b5ec0898-9dd5-4cc4-a0f8-f86f5eca0454" name="School" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4b16787d-b9cc-4de1-939a-88c4c04558ba" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="08048cd7-a6bf-4cb5-ad01-ea9ae4f7e572" name="Review student request" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="bf44d8a8-f961-4231-9229-47691f00de0a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="18c64ca8-1bdd-4918-97a5-700617d5745c" />
+          </association>
+          <association Id="7d1555a4-9470-45d9-8d00-ad056ec2ea20" isDerived="false" sourceEndRoleName="School" targetEndRoleName="Correspondence with student" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="54739b2e-d2df-4588-8141-53244288e62c" LastKnownName="Correspondence with student" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="28542043-bc53-44ae-8a4b-8bdd399bf086" name="School" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c8694c07-6dbd-4946-896d-1d9b4583c2c4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c6fe6e87-a7d9-4cdc-a9cc-ed2b016e32af" name="Correspondence with student" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d3530ebc-7ea5-4b19-90ac-96970d151f0c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="17adf6f2-6f8d-4a7b-ab90-e24fd0622bc3" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ea244184-5f25-45a6-938a-5de468760cb3" name="Create Account" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bc9c8d98-df72-4f1f-8b16-e922e52dbed7" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="d84905d0-8499-439d-b027-b52fddb7e85f" name="Review student request" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="92438ecf-5756-4493-aee5-d212a593591e" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="54739b2e-d2df-4588-8141-53244288e62c" name="Correspondence with student" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="defb5f35-5ea8-4811-bb4a-1753101ed5d0" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="cd67e845-2570-4692-b494-41c19457533a" name="ModelingProject">
+    <elementDefinition Id="23e96121-9922-4e99-9876-9e0bf94d6e20" />
+    <profileInstances>
+      <packageHasProfileInstances Id="9bf42c0e-cc07-4fc6-9360-8e2c8cee8d11">
+        <profileInstance Id="24e4e94b-61b0-4064-99de-4e10d0c2199d" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="d2ca1214-e9f4-46a6-a9d8-1d27f017e76c">
+        <profileInstance Id="69b53409-850f-4832-9178-3b2c23e20069" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

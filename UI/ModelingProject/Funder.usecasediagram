@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="c1c6779d-512a-4c8f-affd-62ad6a46507e" name="Funder" linkedPackageId="b07ce527-69dc-4945-b100-5e61ded5abe4" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="58c29206-6ead-4b37-88c3-0e0ac7fa04c9">
+      <profileInstance Id="0589f80b-3704-4d1b-8c8a-a1f396a13212" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="208b1f14-4832-46c1-a8fd-1b7ac07af9d9">
+      <profileInstance Id="850e12d5-f331-4fd7-9e10-ddc9c82eeace" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="ae44c233-f865-4154-b05d-205940aadbbd" name="Funder" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="78d23f86-96a0-48af-ad22-27e5cdc84a96" />
+        <targetEnds>
+          <association Id="71cada10-d4ae-408c-9462-a53407791b21" isDerived="false" sourceEndRoleName="Funder" targetEndRoleName="Create Account" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="dac68a17-0706-479f-ac80-2882ce94be17" LastKnownName="Create Account" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2e591d4d-7392-4601-b4cf-f7116b210767" name="Funder" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e0e5ee86-0758-481f-b058-c029497ec63d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d8978fb7-bb3d-4bbd-b744-77baf6f1f62f" name="Create Account" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ffb3bf95-0507-4847-8a90-e016ee82faf6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7192af70-d6c0-4a57-8d32-1dc19c23779a" />
+          </association>
+          <association Id="35161f52-b418-490d-8c1e-c2b3928892b3" isDerived="false" sourceEndRoleName="Funder" targetEndRoleName="Add fund" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="818a55f1-6fac-4b9a-ac6a-468c52675637" LastKnownName="Add fund" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c611083b-f6c6-4cb4-9a9e-d0647817e6f5" name="Funder" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e280bef7-6e58-4636-a92c-b49a3e019b41" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b944a809-3a4d-46d8-9f5a-d44fe55e0425" name="Add fund" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c6640078-629b-4464-b832-a4fbdb313338" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7b3ef401-9074-4737-89b1-0dcf5d9db0a8" />
+          </association>
+          <association Id="72c9bc26-f736-47ca-9a0a-f18d7a4b2ec1" isDerived="false" sourceEndRoleName="Funder" targetEndRoleName="Select student(s)" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="1682e8e4-6998-4d36-b9b3-9f753b5c8c42" LastKnownName="Select student(s)" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f7a3d648-21bd-4e35-a9f6-845ef8a09c8a" name="Funder" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1f9db627-1345-4706-83df-e1c351387ce0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a0c00ab4-1f0c-42e5-8e79-a4ab21e425e1" name="Select student(s)" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ba4a95d3-0e97-461e-9c4c-1390fb03176b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a712b022-4e9f-408c-9017-5dffa9f6f192" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="dac68a17-0706-479f-ac80-2882ce94be17" name="Create Account" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f05b4ff8-8462-43a0-8ee6-8ee61e84a347" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="818a55f1-6fac-4b9a-ac6a-468c52675637" name="Add fund" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d186742b-8f11-42d8-8405-136ee6af88e3" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="1682e8e4-6998-4d36-b9b3-9f753b5c8c42" name="Select student(s)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d1a279f2-ae4f-4f8c-a287-1f9311ddd1ec" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="b07ce527-69dc-4945-b100-5e61ded5abe4" name="ModelingProject">
+    <elementDefinition Id="23e96121-9922-4e99-9876-9e0bf94d6e20" />
+  </package>
+</useCaseModelRoot>
