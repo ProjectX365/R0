@@ -6,20 +6,6 @@
       <body>Approve will publish reuest to site</body>
     </comment>
   </ownedCommentsInternal>
-  <profileInstances>
-    <packageHasProfileInstances Id="4474ca9e-13ce-40c5-ba57-67f456e0beff">
-      <profileInstance Id="c0b7c893-e5d1-437b-9248-445c5c7aa506" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="1ef2d784-f8f2-45cd-8290-0d401ed80680">
-      <profileInstance Id="73b53a09-3bae-46a6-bf08-bdbe6ad7a45d" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <useCaseModelRootHasTypes>
       <useCase Id="03cbf0b6-ba8f-410f-8f6f-7809ac1ca98d" name="Create Account" isAbstract="false" isLeaf="false">
@@ -78,6 +64,38 @@
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="65b6b864-456c-41e7-be27-43a0b3c0ae0f" />
           </association>
+          <association Id="4a6879fb-4b28-4d51-a347-fc48905b2325" isDerived="false" sourceEndRoleName="System.Admin" targetEndRoleName="Send expiration notification1" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="03b96508-4e58-422b-9f6f-5e5d950a7a1c" LastKnownName="Send expiration notification" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4942682e-7cf7-4b6d-a6db-4915277c20e8" name="System.Admin" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0f30d59a-f976-4012-9417-8f875f69456f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c1391f35-cf5e-491d-b6bc-fb4598ad8096" name="Send expiration notification1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="58ade974-3bd3-4c63-b356-308bf11dd6ef" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="cec9c5f6-6b70-4d79-b34b-349da863ed1b" />
+          </association>
+          <association Id="842d87ce-ad2a-4535-8df2-2c63230f0061" isDerived="false" sourceEndRoleName="System.Admin" targetEndRoleName="Send funded request notification1" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="357cb24c-a014-41ba-9136-033b09a33474" LastKnownName=" funded approval notification" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f868309c-6a26-4bb7-9152-207656f818f2" name="System.Admin" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c1d15162-cb0c-4801-a384-1a2335c55eae" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ef32e64f-c542-449c-87d1-14db9f690b87" name="Send funded request notification1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1ebff5d3-5548-4f23-b719-8b7122b17c0c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="33a18cef-f4cb-461d-8513-d89e0148d04c" />
+          </association>
         </targetEnds>
       </actor>
     </useCaseModelRootHasTypes>
@@ -91,8 +109,32 @@
         <elementDefinition Id="8af32bb9-4d4d-48c8-b806-441d10bada6b" />
       </useCase>
     </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="357cb24c-a014-41ba-9136-033b09a33474" name=" funded approval notification" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b00021a4-0607-4e5d-a973-7effd8d9e3e7" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="03b96508-4e58-422b-9f6f-5e5d950a7a1c" name="Send expiration notification" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="58cf2804-a5d1-4a64-b40f-cd299f5a38cb" />
+      </useCase>
+    </useCaseModelRootHasTypes>
   </packagedElements>
   <package Id="87cb257e-db88-41ac-8531-bc2ed996b229" name="ModelingProject">
     <elementDefinition Id="23e96121-9922-4e99-9876-9e0bf94d6e20" />
+    <profileInstances>
+      <packageHasProfileInstances Id="4474ca9e-13ce-40c5-ba57-67f456e0beff">
+        <profileInstance Id="c0b7c893-e5d1-437b-9248-445c5c7aa506" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="1ef2d784-f8f2-45cd-8290-0d401ed80680">
+        <profileInstance Id="73b53a09-3bae-46a6-bf08-bdbe6ad7a45d" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </useCaseModelRoot>

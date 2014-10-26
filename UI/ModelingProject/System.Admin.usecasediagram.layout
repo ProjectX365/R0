@@ -46,5 +46,29 @@
         <useCaseShapeMoniker Id="33d41de3-0801-48db-8c57-e733afc89a58" />
       </nodes>
     </useCaseAssociationConnector>
+    <useCaseShape Id="a13df93c-750a-45ba-894b-c2d59ca93807" absoluteBounds="3, 6.25, 1.875, 0.625" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="357cb24c-a014-41ba-9136-033b09a33474" LastKnownName=" funded approval notification" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(1.40579710144928 : 2.5); (3.74682415205645 : 6.25653177888128)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="842d87ce-ad2a-4535-8df2-2c63230f0061" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="67de3268-2711-4b74-a164-58b1067f1f40" />
+        <useCaseShapeMoniker Id="a13df93c-750a-45ba-894b-c2d59ca93807" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="c80aa441-c500-43c9-9d14-5ee3de2ca849" absoluteBounds="3.5, 5.125, 1.875, 0.625" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="03b96508-4e58-422b-9f6f-5e5d950a7a1c" LastKnownName="Send expiration notification" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(1.5 : 2.5); (4.14103646935921 : 5.14103646935921)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="4a6879fb-4b28-4d51-a347-fc48905b2325" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="67de3268-2711-4b74-a164-58b1067f1f40" />
+        <useCaseShapeMoniker Id="c80aa441-c500-43c9-9d14-5ee3de2ca849" />
+      </nodes>
+    </useCaseAssociationConnector>
   </nestedChildShapes>
 </useCaseDiagram>

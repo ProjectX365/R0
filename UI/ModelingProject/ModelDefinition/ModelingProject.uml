@@ -1070,6 +1070,84 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="cec9c5f6-6b70-4d79-b34b-349da863ed1b"
+            isDerived="false"
+            sourceEndRoleName="System.Admin"
+            targetEndRoleName="Send expiration notification1"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="58cf2804-a5d1-4a64-b40f-cd299f5a38cb"
+              LastKnownName="Send expiration notification"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0f30d59a-f976-4012-9417-8f875f69456f"
+                  name="System.Admin"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="58ade974-3bd3-4c63-b356-308bf11dd6ef"
+                  name="Send expiration notification1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="33a18cef-f4cb-461d-8513-d89e0148d04c"
+            isDerived="false"
+            sourceEndRoleName="System.Admin"
+            targetEndRoleName="Send funded request notification1"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="b00021a4-0607-4e5d-a973-7effd8d9e3e7"
+              LastKnownName=" funded approval notification"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c1d15162-cb0c-4801-a384-1a2335c55eae"
+                  name="System.Admin"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1ebff5d3-5548-4f23-b719-8b7122b17c0c"
+                  name="Send funded request notification1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
       </actor>
     </packageHasNamedElement>
@@ -1356,6 +1434,20 @@
           </decisionNode>
         </nodes>
       </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b00021a4-0607-4e5d-a973-7effd8d9e3e7"
+        name=" funded approval notification"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="58cf2804-a5d1-4a64-b40f-cd299f5a38cb"
+        name="Send expiration notification"
+        isAbstract="false"
+        isLeaf="false" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
