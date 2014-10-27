@@ -1148,6 +1148,45 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="0838f207-2a25-4372-b679-773b5f668ffe"
+            isDerived="false"
+            sourceEndRoleName="System.Admin"
+            targetEndRoleName="Maintain User profile "
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="d52a2416-720f-4cab-bbcb-619f16304247"
+              LastKnownName="Maintain User profile "
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a683c410-0d3e-47b2-954f-0e4b9255f9b8"
+                  name="System.Admin"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="80674b8a-d063-4158-9423-9255baf91b2b"
+                  name="Maintain User profile "
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
       </actor>
     </packageHasNamedElement>
@@ -1446,6 +1485,13 @@
       <useCase
         Id="58cf2804-a5d1-4a64-b40f-cd299f5a38cb"
         name="Send expiration notification"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d52a2416-720f-4cab-bbcb-619f16304247"
+        name="Maintain User profile "
         isAbstract="false"
         isLeaf="false" />
     </packageHasNamedElement>

@@ -96,6 +96,22 @@
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="33a18cef-f4cb-461d-8513-d89e0148d04c" />
           </association>
+          <association Id="74590438-2737-4758-80d0-b8dcfda0d9fc" isDerived="false" sourceEndRoleName="System.Admin" targetEndRoleName="Maintain User profile " isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="e8375bd9-b7e4-4dfa-b1ec-cba9e410e67a" LastKnownName="Maintain User profile " />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="351675da-1d1e-4188-b4b1-9f4ec8c25bba" name="System.Admin" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a683c410-0d3e-47b2-954f-0e4b9255f9b8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="920ae56f-225c-41fb-ac76-171450ad61fa" name="Maintain User profile " isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="80674b8a-d063-4158-9423-9255baf91b2b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0838f207-2a25-4372-b679-773b5f668ffe" />
+          </association>
         </targetEnds>
       </actor>
     </useCaseModelRootHasTypes>
@@ -117,6 +133,11 @@
     <useCaseModelRootHasTypes>
       <useCase Id="03b96508-4e58-422b-9f6f-5e5d950a7a1c" name="Send expiration notification" isAbstract="false" isLeaf="false">
         <elementDefinition Id="58cf2804-a5d1-4a64-b40f-cd299f5a38cb" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e8375bd9-b7e4-4dfa-b1ec-cba9e410e67a" name="Maintain User profile " isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d52a2416-720f-4cab-bbcb-619f16304247" />
       </useCase>
     </useCaseModelRootHasTypes>
   </packagedElements>
